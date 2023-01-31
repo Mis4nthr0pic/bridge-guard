@@ -1,4 +1,7 @@
 ## Bridge Monitoring System
+![Watch the video](https://github.com/Mis4nthr0pic/bridge-guard/blob/main/Screen-Recording-2023-01-31-at-17.36.31.gif)
+
+
 ### Introduction
 This project provides a monitoring system for a bridge contract deployed on the Ethereum blockchain. The monitoring system listens to events emitted by the contract and performs certain actions based on the type of event.
 
