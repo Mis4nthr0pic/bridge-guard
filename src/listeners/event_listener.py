@@ -13,7 +13,6 @@ class EventListener:
         self.contract_address = contract_address
         self.blocknumber = blocknumber
         self.last_block_processed = web3.eth.blockNumber
-        self.logger = log.get_logger(__name__)
 
         abi = load_helper_abi()
 
