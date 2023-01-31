@@ -1,5 +1,5 @@
 ## Bridge Monitoring System
-![Watch the video](https://github.com/Mis4nthr0pic/bridge-guard/blob/main/Screen-Recording-2023-01-31-at-17.36.31.gif)
+![Watch the video](https://github.com/Mis4nthr0pic/bridge-guard/blob/main/Screen-Recording-2023-01-31-at-17.36.31.gif?raw=true)
 
 
 ### Introduction
