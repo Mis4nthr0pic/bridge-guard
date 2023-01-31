@@ -26,7 +26,7 @@ Listens to events that occur when the amount withdrawn from the bridge exceeds a
 Listens to events that occur when the threshold required to change the multisig in the bridge changes. It logs a warning in case of such a change.
 
 ### BridgeGatewayFundsDrained
-Listens to events that occur when the threshold required to change the multisig in the bridge changes. It logs a warning in case of such a change.
+Actively pulls information from the blockchain regarding reserves and warns in case the funds are sundelly dropped by 25%
 
 Usage
 To use this monitoring system, you need to specify the settings for your Ethereum network and the contract address in the src/settings.py file.
