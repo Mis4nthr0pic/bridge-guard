@@ -26,4 +26,4 @@ class connectionProvider:
         return web3
 
     def on_error(self, error):
-        logger.error("Error connecting to WS RPC server: ", self.name, "Error: ", error)
+        logger.error("Error: ", error)
