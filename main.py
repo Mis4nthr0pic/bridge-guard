@@ -28,21 +28,14 @@ async def main():
     while True:
         #first run validators
         await asyncio.create_task(bridgeGatewayFundsDrained.validate())
-
-        #await asyncio.create_task(bridgeStrangeMintSizeListener.listen())
         await asyncio.create_task(bridgeMessengerOwnerChangedListener.listen())
         await asyncio.create_task(bridgeAddressManagerValueUpdated.listen())
         await asyncio.create_task(bridgeMessengerIsPaused.listen())
         await asyncio.create_task(bridgeWithdrawExceedsThreshold.listen())
         await asyncio.create_task(bridgeMultisigChangedThreshold.listen())
         
-        #await asyncio.create_task(bridgePendingTransactionsCountListener.validate())
-        
-        blockNumber = web3L1.eth.getBlock('latest').number
-        print("scanning blocknumber: ", blockNumber)
+        print("scanning blocknumber: ", web3L1.eth.getBlock('latest').number)
         await asyncio.sleep(2)
-        #await asyncio.create_task(bridgeUnsualValue.listen())
-        #await asyncio.create_task(bridgeProxyOwnerChanged.listen())
 
 
 if __name__ == "__main__":
