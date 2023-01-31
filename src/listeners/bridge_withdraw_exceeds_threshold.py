@@ -7,7 +7,7 @@ logger = log.get_logger(__name__)
 class BridgeWithdrawExceedsThreshold(EventListener):
 
     FILTER = "ETHWithdrawalFinalized"
-    ON_EVENT_MESSAGE = "Unexpected Balance Change -> A withdraw of 25% or more of toke was done. Bridge should be used :"
+    ON_EVENT_MESSAGE = "Unexpected Balance Change -> A withdraw of 25% or more of tokens was done. Bridge should be used :"
 
     def __init__(self, web3, contract_address):
         super().__init__(web3, contract_address, self.FILTER, 'latest')
