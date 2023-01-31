@@ -19,7 +19,7 @@ async def main():
 
     # Start listener
     bridgeMessengerOwnerChangedListener = BridgeMessengerOwnerChanged(web3L1, settings.CONTRACT_ADDRESS)
-    bridgeGatewayImplementationUpdated = BridgeAddressManagerValueUpdated(web3L1, settings.CONTRACT_ADDRESS)
+    bridgeAddressManagerValueUpdated = BridgeAddressManagerValueUpdated(web3L1, settings.CONTRACT_ADDRESS)
     bridgeMessengerIsPaused = BridgeMessengerIsPaused(web3L1, settings.CONTRACT_ADDRESS)
     bridgeWithdrawExceedsThreshold = BridgeWithdrawExceedsThreshold(web3L1, settings.CONTRACT_ADDRESS)
     bridgeMultisigChangedThreshold = BridgeMultisigChangedThreshold(web3L1, settings.CONTRACT_ADDRESS)
@@ -31,7 +31,7 @@ async def main():
 
         #await asyncio.create_task(bridgeStrangeMintSizeListener.listen())
         await asyncio.create_task(bridgeMessengerOwnerChangedListener.listen())
-        await asyncio.create_task(bridgeGatewayImplementationUpdated.listen())
+        await asyncio.create_task(bridgeAddressManagerValueUpdated.listen())
         await asyncio.create_task(bridgeMessengerIsPaused.listen())
         await asyncio.create_task(bridgeWithdrawExceedsThreshold.listen())
         await asyncio.create_task(bridgeMultisigChangedThreshold.listen())
